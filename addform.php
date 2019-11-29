@@ -1,4 +1,3 @@
-<!-- add.php -->
 <?php include "hdrnftr/interface.php" ?>
 <?php include "config/connect.php" ?>
 <?php 
@@ -6,17 +5,11 @@
 $email = $title = $authors =''; 
 $errors = array ('email' => '' , 'title' =>'' , 'authors' => '');
 if(isset($_POST['submit'])) {
-	//echo htmlspecialchars($_POST['email']);
-	//echo htmlspecialchars($_POST['title']);
-	//echo htmlspecialchars($_POST['authors']);
 	if(empty($_POST['email']))
 	{
 		$errors['email'] = 'email is required <br />';
 	} else{
-			//echo 'Email : '; 
-			//echo htmlspecialchars( $_POST['email']);
-			//echo '<br/>';
-		 $email = $_POST['email'];
+			 $email = $_POST['email'];
 		 if(!filter_var($email , FILTER_VALIDATE_EMAIL)){
 		 	$errors['email'] = 'email must be a valid email address';
 		 }
@@ -25,11 +18,7 @@ if(isset($_POST['submit'])) {
 	{
 		$errors['title'] = 'title is required <br />';
 	} else{
-			//echo 'Title : ';
-			//echo htmlspecialchars($_POST['title']);
-			//echo '<br/>';
-		// ^ -> fromstart , $ -> toend , \s-> spaces , + ->any length(atleast 1 char) , ffull expression should be inside /
-		 $title =$_POST['title'];
+			 $title =$_POST['title'];
 		 if(!preg_match('/^[a-zA-Z\s]+$/' ,$title)){
 		 	$errors['title'] = 'title must be letter and spaces only';
 		 }
@@ -83,8 +72,6 @@ if(isset($_POST['submit'])) {
 	   	 }
 } 
 ?>
-
-
 <html>
 <head>
 	<style type="text/css">
@@ -117,5 +104,4 @@ if(isset($_POST['submit'])) {
 			<input type="submit" name="submit" value="submit" class="btn btn-brand z-depth-0">
 		</div>
 	</form></section>
-
-	<?php include "hdrnftr/footer.php" ?>
+	
