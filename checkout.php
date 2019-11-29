@@ -35,7 +35,7 @@
 	*/
 	session_start();
 	require_once "config/connect.php";
-	require_once 'hdrnftr/interface.php';
+	require_once 'hdrnftr/interfacetry.php';
 	// print out header here
 	$title = "Checking out";
 

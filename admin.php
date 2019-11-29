@@ -1,6 +1,6 @@
 <?php
 	$title = "Administration section";
-	require_once "./hdrnftr/interface.php";
+	require_once "./hdrnftr/interfacetry.php";
 ?>
 <div class="container">
 <div class="row">
