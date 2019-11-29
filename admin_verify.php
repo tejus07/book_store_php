@@ -4,8 +4,8 @@
 		echo "Something wrong! Check again!";
 		exit;
 	}
-	//require_once "config/connect.php";
-	$conn = db_connect();
+	require_once "config/connect.php";
+	
 
 	$name = trim($_POST['name']);
 	$pass = trim($_POST['pass']);

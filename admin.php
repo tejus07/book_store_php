@@ -12,7 +12,7 @@
                     	<div class="center" >
                    		<section class="container grey-text ">
     
-							<form class="white" method="post" action="admin_book.php">
+							<form class="white" method="post" action="admin_verify.php">
 								<div class="form-group">
 								<label for="name" class="control-label col-md-4">Name</label>
 								<div class="col-md-4">

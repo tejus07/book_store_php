@@ -13,7 +13,6 @@
 		return $price;
 	}
 
-	
 	function total_items($cart){
 		$items = 0;
 		if(is_array($cart)){
